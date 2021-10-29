@@ -1,0 +1,50 @@
+extends Node2D
+
+# class definition
+class_name baseEnemy
+
+#class variables
+var hp setget setHp , getHp #health
+var sp setget setSp , getSp # speed
+var pd setget setPd , getPd# physical defence
+var md setget setMd , getMd# magic defence
+var xpDrop setget setXpDrop , getXpDrop # experience drop
+var gpDrop setget setGpDrop , getGpDrop # money drop
+
+#setters 
+func setHp(newHp) :
+	hp = newHp
+	
+func setSp(newSp) :
+	sp = newSp
+	
+func setPd(newPd) :
+	pd = newPd
+	
+func setMd(newMd) :
+	md = newMd
+	
+func setXpDrop(newXpDrop) :
+	xpDrop = newXpDrop
+	
+func setGpDrop(newGpDrop) :
+	gpDrop = newGpDrop
+
+#Getters
+func getHp() :
+	return hp
+
+func getSp() :
+	return sp
+	
+func getPd() :
+	return pd
+	
+func getMd() :
+	return md
+	
+func getXpDrop() :
+	return xpDrop
+	
+func getGpDrop() :
+	return gpDrop
